@@ -1,7 +1,8 @@
-package com.intemplate.smservice.services;
+package com.intemplate.smservice.filters;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.intemplate.smservice.models.AccountCredentials;
+import com.intemplate.smservice.services.TokenAuthenticationService;
 import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.security.authentication.AuthenticationManager;

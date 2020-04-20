@@ -27,7 +27,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
             // 生成令牌
             Authentication auth = new UsernamePasswordAuthenticationToken(name, password, authorities);
             return auth;
-        }else {
+        } else {
             throw new BadCredentialsException("密码错误~");
         }
     }

@@ -32,7 +32,7 @@ public class TokenAuthenticationService {
     }
 
     // JWT生成方法
-    static void addAuthentication(HttpServletResponse response, String username) {
+    public static void addAuthentication(HttpServletResponse response, String username) {
 
         // 生成JWT
         String JWT = Jwts.builder()
@@ -61,7 +61,7 @@ public class TokenAuthenticationService {
     }
 
     // JWT验证方法
-    static Authentication getAuthentication(HttpServletRequest request) {
+    public static Authentication getAuthentication(HttpServletRequest request) {
         // 从Header中拿到token
         String token = request.getHeader(HEADER_STRING);
 

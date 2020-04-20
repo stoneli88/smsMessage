@@ -1,5 +1,6 @@
-package com.intemplate.smservice.services;
+package com.intemplate.smservice.filters;
 
+import com.intemplate.smservice.services.TokenAuthenticationService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.GenericFilterBean;
